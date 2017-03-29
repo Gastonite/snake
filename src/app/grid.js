@@ -165,7 +165,6 @@ export default function Grid({
 
   };
 
-
   const _matrix = Matrix(rows, columns, position => {
     return Node({position})
   });

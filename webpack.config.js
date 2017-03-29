@@ -47,6 +47,5 @@ module.exports = env => {
     })
   ];
 
-
   return { entry, output, module, devtool, stats, plugins };
 };

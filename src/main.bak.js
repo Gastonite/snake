@@ -8,7 +8,6 @@ import { Provider, connect } from 'react-redux';
 import { fabric } from 'fabric';
 
 
-console.log('fabric', fabric);
 const initialState = {
   canvas: {
     "objects": [{
