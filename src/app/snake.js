@@ -1,10 +1,10 @@
-import Game from '../../lib/game';
-import Piece from '../../lib/piece';
-import Animation from '../../lib/animation';
-import Player from '../../lib/player';
-import Character from '../../lib/character';
-import {default as Grid, Node} from '../../lib/grid';
-import FabricRenderer from '../../lib/renderers/fabric';
+import Game from './game';
+import Piece from './piece';
+import Animation from './animation';
+import Player from './player';
+import Character from './character';
+import {default as Grid, Node} from './grid';
+import FabricRenderer from './renderers/fabric';
 import 'fabric'
 
 window.$ = document.querySelector.bind(document);
@@ -38,7 +38,6 @@ const Snake = function Snake(object) {
     console.log('Snake.update()', grid);
 
     _tail.unshift(snake.position);
-
     _update(snake, grid);
 
     const node = world.getNode(snake.position);
